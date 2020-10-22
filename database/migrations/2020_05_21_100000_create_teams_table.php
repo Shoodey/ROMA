@@ -17,7 +17,8 @@ class CreateTeamsTable extends Migration
             $table->id();
             $table->foreignId('user_id')->index();
             $table->string('name');
-            $table->boolean('personal_team');
+            $table->boolean('personal_team')->default(false);
+            $table->boolean('global_team')->default(false);
             $table->timestamps();
         });
     }

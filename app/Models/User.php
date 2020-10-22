@@ -18,6 +18,7 @@ class User extends Authenticatable
     use HasTeams;
     use Notifiable;
     use TwoFactorAuthenticatable;
+    use HasFactory;
 
     /**
      * The attributes that are mass assignable.
